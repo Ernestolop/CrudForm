@@ -1,0 +1,8 @@
+services:
+  formdb:
+    image: mongo:4.4.0
+    container_name: form-databases
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongo:/data/db
